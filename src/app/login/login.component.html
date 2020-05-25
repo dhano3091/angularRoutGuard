@@ -1,0 +1,22 @@
+<div style="margin-top: 5%; margin-left: 10%;">
+    <form #formdata=ngForm (ngSubmit)="validate(formdata)">
+        <table>
+            <tr>
+                <mat-form-field>
+                    <mat-label>Enter Email</mat-label>
+                <input matInput placeholder="Email" type="email" name="email" required ngModel>
+                </mat-form-field>
+                
+            </tr>
+            <tr>
+                <mat-form-field>
+                    <mat-label>Enter Password</mat-label>
+                <input matInput placeholder="Password" type="password" required name="password" ngModel>
+                </mat-form-field>
+            </tr>
+            <tr>
+                <button mat-button type="submit">SUBMIT</button>
+            </tr>
+        </table>
+    </form>
+</div>
